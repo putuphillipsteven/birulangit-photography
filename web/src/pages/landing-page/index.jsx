@@ -1,27 +1,32 @@
+import { CustomFooter } from '../../components/custom-footer';
 import { Navbar } from '../../components/navbar';
+import { BestProdsCarousel } from './components/best-product-carousel';
 import { CategoryList } from './components/category-list';
 
 export const LandingPage = () => {
 	return (
-		<div class='max-w-full min-h-svh'>
+		<div className='max-w-full min-h-screen flex flex-col flex-wrap gap-y-4'>
 			<Navbar />
-			<div class='lp-headers p-4 flex flex-col gap-4'>
-				<h1 class='text-xl font-bold text-center'>
+			<div className='lp-headers py-2 px-4 flex flex-col gap-4'>
+				<h1 className='text-xl font-bold text-center'>
 					Abadikan Momen,
 					<br /> Ciptakan Kenangan
 				</h1>
 				<CategoryList />
 			</div>
-			<div class='lp-info p-2 bg-gray-100'>
-				<p class='text-xs text-center'>
+			<div className='lp-info py-2 px-4 bg-gray-100'>
+				<p className='text-xs text-center'>
 					Ada pertanyaan? Hubungi kami di{' '}
-					<a href='/' class='text-blue-600 underline'>
+					<a href='/' className='text-blue-600 underline'>
 						whatsapp
 					</a>
 				</p>
 			</div>
-			<div class='lp-body p-4 flex flex-col gap-4'>
-				<h1 class='text-xl font-bold text-center'>Paket ter-populer</h1>
+			<div className='w-full h-auto'>
+				<BestProdsCarousel />
+			</div>
+			<div className='w-full'>
+				<CustomFooter />
 			</div>
 		</div>
 	);
