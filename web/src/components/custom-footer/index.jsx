@@ -1,34 +1,38 @@
 import { Footer } from 'flowbite-react';
-import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from 'react-icons/bs';
+import {
+	BsDribbble,
+	BsFacebook,
+	BsGithub,
+	BsInstagram,
+	BsTwitter,
+	BsWhatsapp,
+} from 'react-icons/bs';
 
 export const CustomFooter = () => {
 	return (
-		<Footer className='bg-gray-300 rounded-none pt-4'>
+		<Footer className='bg-gray-300 rounded-none'>
 			<div className='w-full'>
-				<div className='w-full px-4 py-4 flex flex-col gap-y-4 items-center'>
+				<div className='grid w-full grid-cols-2 gap-4 px-4 py-4 md:grid-cols-4'>
 					<div>
-						<Footer.Title title='Company' />
-						<Footer.LinkGroup col>
-							<Footer.Link href='#'>About</Footer.Link>
-							<Footer.Link href='#'>Careers</Footer.Link>
+						<Footer.Title title='Perusahaan' className='mb-4' />
+						<Footer.LinkGroup col className=''>
+							<Footer.Link href='#'>Tentang Kami</Footer.Link>
+							<Footer.Link href='#'>Karir</Footer.Link>
 						</Footer.LinkGroup>
 					</div>
 					<div>
-						<Footer.Title title='contacts center' />
+						<Footer.Title title='Kontak' className='mb-4' />
 						<Footer.LinkGroup col>
-							<Footer.Link href='#'>Instagram</Footer.Link>
 							<Footer.Link href='#'>WhatsApp</Footer.Link>
+							<Footer.Link href='#'>Instagram</Footer.Link>
 						</Footer.LinkGroup>
 					</div>
 				</div>
-				<div className='w-full bg-gray-700 px-4 py-6 sm:flex sm:items-center sm:justify-between'>
-					<Footer.Copyright href='#' by='Flowbite™' year={2022} />
-					<div className='mt-4 flex space-x-6 sm:mt-0 sm:justify-center'>
-						<Footer.Icon href='#' icon={BsFacebook} />
+				<div className='w-full bg-gray-700 px-4 py-4 sm:flex sm:items-center sm:justify-between'>
+					<Footer.Copyright href='#' by='Birulangit Photography™' year={2024} />
+					<div className='mt-4 flex space-x-4 sm:mt-0 sm:justify-center'>
 						<Footer.Icon href='#' icon={BsInstagram} />
-						<Footer.Icon href='#' icon={BsTwitter} />
-						<Footer.Icon href='#' icon={BsGithub} />
-						<Footer.Icon href='#' icon={BsDribbble} />
+						<Footer.Icon href='#' icon={BsWhatsapp} />
 					</div>
 				</div>
 			</div>

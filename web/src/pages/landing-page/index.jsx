@@ -1,12 +1,12 @@
 import { CustomFooter } from '../../components/custom-footer';
-import { Navbar } from '../../components/navbar';
+import { CustomNavbar } from '../../components/custom-navbar';
 import { BestProdsCarousel } from './components/best-product-carousel';
 import { CategoryList } from './components/category-list';
 
 export const LandingPage = () => {
 	return (
 		<div className='max-w-full min-h-screen flex flex-col flex-wrap gap-y-4'>
-			<Navbar />
+			<CustomNavbar />
 			<div className='lp-headers py-2 px-4 flex flex-col gap-4'>
 				<h1 className='text-xl font-bold text-center'>
 					Abadikan Momen,
